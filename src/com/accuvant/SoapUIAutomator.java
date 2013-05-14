@@ -150,10 +150,7 @@ public class SoapUIAutomator {
 	public static void main(String[] args) 
 	{
 		Logger.getRootLogger().setLevel(Level.OFF);
-		//Turn off all SoapUI logger to get rid of command line spam
-		Enumeration<Logger> l = Logger.getRootLogger().getAllAppenders();
-		while (l.hasMoreElements())
-			l.nextElement().setLevel(Level.OFF);
+
 		if (args.length != 2)
 		{
 			printe("Incorrect argument count: " + args.length);
@@ -271,7 +268,7 @@ public class SoapUIAutomator {
 	
 	private static void usage()
 	{
-		print("Usage: java -jar <jarfile> <wsdlFile> <1 | 2 | 3>");
+		print("Usage: java -jar <jarfile> <wsdlFile>");
 		print("Creates multiple project for each WSDL with 5 operations in each project. Configurable via -DopCount=X");
 		print("Add security scans by specifying -DsecurityScans=Type1,Type2,Typ3");
 		print("All JVM flags (-Dfoo=bar) should be passed in before the -jar flag");
