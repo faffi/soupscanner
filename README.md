@@ -21,7 +21,7 @@ Main goal is the automation of testing web service endpoints via the command lin
 		[+] 	XPath Injection
 
 ##Compile:
-	Add the SoapUI Pro jar to the build path along with the required dependencies for SoapUI Pro (jar files). The code uses soapui classes in order to create the project files, which means it requires all the dependencies which soapui needs to run.
+Add the SoapUI Pro jar to the build path along with the required dependencies for SoapUI Pro (jar files). The code uses soapui classes in order to create the project files, which means it requires all the dependencies which soapui needs to run.
 
 ##Tips:
 	- Increase JVM memory -Xmx=4096M
